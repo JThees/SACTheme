@@ -148,6 +148,20 @@ ul.forums {
 	background-color: transparent !important;
 }
 
+/* Alternating forum row colors */
+li.row:nth-child(even) {
+	background-color: #1F2022 !important;
+}
+
+li.row:nth-child(even):hover {
+	background-color: #0E384A !important;
+}
+
+/* Category header styling */
+li.header {
+	background-color: #0E384A !important;
+}
+
 /* ===== SAC Header Navigation ===== */
 .sac-header-nav {
 	display: flex;

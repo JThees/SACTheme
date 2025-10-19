@@ -119,7 +119,7 @@ fieldset.polls {
 .forumbg {
 	background-image: none;
 	border-radius: var(--border-radius-big) var(--border-radius-big) 0 0;
-	margin-bottom: 5px;
+	margin-bottom: 25px;
 	padding: 0;
 }
 
