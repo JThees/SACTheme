@@ -170,6 +170,34 @@
 		window.scrollTo({ top: 0, behavior: 'smooth' });
 	});
 })();
+
+// SAC Mobile Menu Toggle
+(function(){
+	var menuToggle = document.getElementById('sac-mobile-menu-toggle');
+	var mobileNav = document.querySelector('.sac-mobile-nav');
+
+	if(!menuToggle || !mobileNav) return;
+
+	menuToggle.addEventListener('click', function(e){
+		e.preventDefault();
+		mobileNav.classList.toggle('active');
+	});
+
+	// Close menu when clicking outside
+	document.addEventListener('click', function(e){
+		if(!menuToggle.contains(e.target) && !mobileNav.contains(e.target)){
+			mobileNav.classList.remove('active');
+		}
+	});
+
+	// Close menu when clicking a link
+	var mobileLinks = mobileNav.querySelectorAll('.sac-mobile-nav-link');
+	mobileLinks.forEach(function(link){
+		link.addEventListener('click', function(){
+			mobileNav.classList.remove('active');
+		});
+	});
+})();
 </script>
 
 {% if S_PLUPLOAD %}{% include 'plupload.html' %}{% endif %}

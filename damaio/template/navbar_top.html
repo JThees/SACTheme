@@ -3,6 +3,21 @@
 
 	<ul id="nav-main" class="nav-main linklist" role="menubar">
 
+		<li id="sac-mobile-menu-container" class="sac-mobile-menu-container" data-skip-responsive="true">
+			<button id="sac-mobile-menu-toggle" class="sac-mobile-menu-toggle" aria-label="Menu">
+				<span class="hamburger-line"></span>
+				<span class="hamburger-line"></span>
+				<span class="hamburger-line"></span>
+			</button>
+			<div class="sac-mobile-nav">
+				<a href="https://sovereignaicollective.com/videos/" class="sac-mobile-nav-link">Videos</a>
+				<a href="https://sovereignaicollective.com/nyx-rsi-rag/" class="sac-mobile-nav-link">Nyx RSI RAG</a>
+				<a href="https://sovereignaicollective.com/sac-manifest/" class="sac-mobile-nav-link">SAC Manifest</a>
+				<a href="https://sovereignaicollective.com/about-us/" class="sac-mobile-nav-link">About Us</a>
+				<a href="https://sovereignaicollective.com/public-providers/" class="sac-mobile-nav-link">Public Providers</a>
+			</div>
+		</li>
+
 		<li id="quick-links" class="quick-links dropdown-container responsive-menu{% if not S_DISPLAY_QUICK_LINKS and not S_DISPLAY_SEARCH %} hidden{% endif %}" data-skip-responsive="true">
 			<a href="#" class="dropdown-trigger">
 				<i class="icon fa-bars fa-fw" aria-hidden="true"></i><span>{{ lang('QUICK_LINKS') }}</span>
